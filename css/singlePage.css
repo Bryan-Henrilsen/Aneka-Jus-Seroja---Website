@@ -11,12 +11,8 @@
 }
 
 body {
-    min-height: 100vh;
     color: #000000;
-    background-image: url(/assets/landing_screen_desktop.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: black;
 }
 
 .header {
@@ -26,7 +22,7 @@ body {
     display: flex;
     height: 80px;
     padding: 0 30px;
-    background: transparent;
+    background: #ffffff;
     align-items: center;
     justify-content: space-between;
 }
@@ -101,13 +97,13 @@ body {
     transition: .5s;
 }
 
-.nav-bar a:hover, .title:hover {
+.nav-bar a:hover, .title:hover, .nav-bar a.active {
     color: #90D26D;
 }
 
 .side-bar a:hover {
     color: #90D26D;
-    background-color: #ffffff;
+    background-color: #FCDC94;
     border-radius: 20px;
 }
 
@@ -149,75 +145,18 @@ body {
 }
 
 .side-bar .dropdown-content li a {
-    color: #90D26D;
+    color: #FF8F00;
     padding: 5px 0;
     text-decoration: none;
     display: block;
 }
 
-.menu-bar {
-    display: none;
-}
-
-.text {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 600px;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.text .welcome {
-    color: #F6B17A;
-    font-size: 45px;
-}
-
-.text .destination {
-    color: #FF8F00;
-    font-size: 50px;
-    padding-bottom: 5px;
-    font-family: "Playfair Dispair";
-    font-weight: 900;
-}
-
-.text p {
-    text-align: center;
-    width: 600px;
-    line-height: 1.5;
-    font-size: 20px;
-    font-weight: 500;
-    color: #F5F7F8;
-}
-
-.text .btn {
-    margin-top: 25px;
-    border: solid 2px;
-    border-radius: 20px;
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
-    background-color: #ffffff;
-}
-
-.btn a {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 900;
+.side-bar .dropdown-content li a:hover {
     color: #90D26D;
-    transition: .25s;
 }
 
-.btn:hover {
-    background-color: #90D26D;
-}
 
-.btn:hover a {
-    color: #ffffff;
-}
-
-.text .mobile {
+.menu-bar {
     display: none;
 }
 
@@ -241,13 +180,6 @@ body {
     .nav-bar li a{
         padding: 0 10px;
     }
-
-    .text {
-        height: 700px;
-    }
-    .text .welcome {
-        font-size: 35px;
-    }
 }
 
 @media(max-width: 900px) {
@@ -258,18 +190,6 @@ body {
     .nav-bar li a {
         padding: 0 10px;
         font-size: 17px;
-    }
-
-    .text .welcome {
-        font-size: 30px;
-    }
-
-    .text .destination {
-        font-size: 35px;
-    }
-
-    .text p {
-        font-size: 18px;
     }
 }
 
@@ -291,42 +211,6 @@ body {
     }
 }
 
-@media(max-width: 750px) {
-    .text .welcome {
-        font-size: 25px;
-    }
-
-    .text .destination {
-        padding-top: 10px;
-        font-size: 35px;
-    }
-
-    .text p {
-        font-size: 17px;
-        width: 500px;
-        padding: 15px 0;
-        text-align: none;
-    }
-}
-
-@media(max-width: 650px) {
-    .text .welcome {
-        font-size: 24px;
-    }
-
-    .text .destination {
-        padding-top: 10px;
-        font-size: 35px;
-    }
-
-    .text p {
-        font-size: 16px;
-        width: 450px;
-        padding: 15px 0;
-        text-align: none;
-    }
-}
-
 @media(max-width: 600px) {
     .logo img {
         width: 80%;
@@ -336,66 +220,11 @@ body {
     .logo .title {
         font-size: 23px;
     }
-
-    .text .welcome {
-        display: none;
-    }
-
-    .text .mobile {
-        display: flex;
-        color: #90D26D;
-    }
-
-    .text {
-        height: 650px;
-    }
-
-    .text .destination {
-        font-size: 40px;
-    }
-
-    .text p {
-        font-size: 20px;
-    }
-
-    .text .btn {
-        margin-top: 10px;
-    }
 }
 
 @media(max-width: 500px) {
     .side-bar {
         width: 100%;
-    }
-
-    .text p {
-        font-size: 17px;
-    }
-
-    .text .btn {
-        margin-top: 5px;
-        border: solid 2px;
-        border-radius: 20px;
-        width: 150px;
-        height: 50px;
-        font-size: 20px;
-        background-color: #ffffff;
-    }
-    
-    .btn a {
-        text-decoration: none;
-        font-size: 17px;
-        font-weight: 900;
-        color: #90D26D;
-        transition: .5s;
-    }
-
-    .btn:hover {
-        background-color: #90D26D;
-    }
-    
-    .btn:hover a {
-        color: #ffffff;
     }
 }
 
@@ -407,15 +236,6 @@ body {
     .logo .title {
         font-size: 19px;
     }
-
-    .text {
-        height: 600px;
-    }
-
-    .text p {
-        width: 350px;
-        font-size: 15px;
-    }
 }
 
 @media(max-width: 400px) {
@@ -423,5 +243,3 @@ body {
         font-size: 17px;
     }
 }
-
-

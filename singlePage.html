@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
     <title>Aneka Jus Seroja</title>
+    <link rel="stylesheet" href="css/singlePage.css">
 </head>
 <body>
     <div class="header">
@@ -15,7 +15,7 @@
 
         <ul class="side-bar">
             <li onclick=hideSidebar()> <img src="assets/close.svg" alt="close"></li>
-            <li><a href="singlePage.html">Home</a></li>
+            <li><a href="singlePage.html" class="active">Home</a></li>
 
             <li class="dropdown"><a href="#" class="dropbtn">Our Menu <img src="assets/dropdown.svg" alt=""></a>
                 <ul class="dropdown-content">
@@ -31,9 +31,9 @@
         </ul>
 
         <ul class="nav-bar">
-            <li class="hideOnMobile"><a href="singlePage.html">Home</a></li>
+            <li class="hideOnMobile"><a href="singlePage.html" class="active">Home</a></li>
 
-            <li class="dropdown hideOnMobile"><a href="#">Our Menu <img src="assets/dropdown.svg" alt=""></a>
+            <li class="dropdown hideOnMobile"><a href="#">Our Menu <img src="assets/dropdown-dark.svg" alt=""></a>
                 <ul class="dropdown-content">
                     <li class="hideOnMobile"><a href="#">Menu</a></li>
                     <li class="hideOnMobile"><a href="#">Catering</a></li>
@@ -44,18 +44,43 @@
 
             <li class="hideOnMobile"><a href="#">Order</a></li>
             <li class="hideOnMobile"><a href="#">Contact Us</a></li>
-            <li onclick=showSidebar() class="menu-bar"> <img src="assets/menu.svg" alt="side"></li>
+            <li onclick=showSidebar() class="menu-bar"> <img src="assets/menu-dark.svg" alt="side"></li>
         </ul>
     </div>
 
-    <div class="text">
-        <h1 class="welcome">Temukan Pengalaman Kuliner Istimewa di</h1>
-        <h1 class="mobile">Welcome To</h1>
-        <h1 class="destination">Aneka Jus Seroja</h1>
-        <p>Nikmati pengalaman kuliner tak terlupakan di Aneka Jus Seroja, tempat di mana kelezatan dan kesegaran berpadu. Kami menyajikan beragam hidangan lezat seperti nasi goreng, bakso sapi, kwetiau goreng, paket nasi, chicken katsu, burger dan camilan serta berbagai jus buah segar yang siap menggugah selera Anda.</p>
-        <button class="btn"><a href="singlePage.html">Get Started</a></button>
+    <div class="doubleBox">
+        <div class="history">
+            <p></p>
+        </div>
+        <div class="schedule">
+            <img src="" alt="">
+        </div>
     </div>
 
-    <script src="js/index.js"></script>
+    <div class="bestSeller">
+
+    </div>
+
+    <div class="catering">
+
+    </div>
+
+    <div class="frozenFood">
+
+    </div>
+
+    <div class="snackBox">
+
+    </div>
+
+    <div class="gallery">
+
+    </div>
+
+    <div class="footer">
+
+    </div>
+
+    <script src="js/singlePage.js"></script>
 </body>
 </html>
