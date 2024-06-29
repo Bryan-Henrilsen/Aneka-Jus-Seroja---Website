@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bookPage.css">
+    <title>Aneka Jus Seroja</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html"><img src="assets/logo-ajs.svg" alt="logo"></a>
+            <a href="index.html" class="title">ANEKA JUS SEROJA</a>
+        </div>
+        <ul class="side-bar">
+            <li onclick="hideSidebar()"> <img src="assets/close.svg" alt="close"></li>
+            <li><a href="singlePage.html">Home</a></li>
+            <li class="dropdown"><a href="#" class="dropbtn">Our Menu <img src="assets/dropdown.svg" alt="dropdown icon"></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Catering</a></li>
+                    <li><a href="#">Frozen Food</a></li>
+                    <li><a href="#">Snack Box</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Order</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul class="nav-bar">
+            <li class="hideOnMobile"><a href="singlePage.html">Home</a></li>
+            <li class="dropdown hideOnMobile"><a href="#">Our Menu <img src="assets/dropdown.svg" alt="dropdown icon"></a>
+                <ul class="dropdown-content">
+                    <li class="hideOnMobile"><a href="#">Menu</a></li>
+                    <li class="hideOnMobile"><a href="#">Catering</a></li>
+                    <li class="hideOnMobile"><a href="#">Frozen Food</a></li>
+                    <li class="hideOnMobile"><a href="#">Snack Box</a></li>
+                </ul>
+            </li>
+            <li class="hideOnMobile"><a href="#">Order</a></li>
+            <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+            <li onclick="showSidebar()" class="menu-bar"> <img src="assets/menu.svg" alt="menu"></li>
+        </ul>
+    </div>
+    <div class="book-content">
+        <h2>Book Your Food</h2>
+        <img src="assets/iconsBook/SEROJA LINE.png" alt="seroja icon">
+        <p>Menerima pengantaran untuk sekitaran wilayah Pontianak</p>
+    </div>
+    <div class="form-container">
+        <form action="#" method="POST">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <label for="name">
+                        <img src="assets/iconsBook/iconamoon--profile-light.svg" alt="name icon" class="input-icon">
+                        <input type="text" id="name" name="name" required placeholder="YOUR NAME">
+                    </label>
+                </div>
+                <div class="grid-item">
+                    <label for="email">
+                        <img src="assets/iconsBook/fontisto--email.svg" alt="email icon" class="input-icon">
+                        <input type="email" id="email" name="email" placeholder="EMAIL ADDRESS">
+                    </label>
+                </div>
+                <div class="grid-item">
+                    <label for="phone">
+                        <img src="assets/iconsBook/mingcute--phone-line.svg" alt="phone icon" class="input-icon">
+                        <input type="tel" id="phone" name="phone" placeholder="PHONE NUMBER">
+                    </label>
+                </div>
+                <div class="grid-item">
+                    <label for="date">
+                        <img src="assets/iconsBook/lets-icons--date-range.svg" alt="date icon" class="input-icon">
+                        <input type="date" id="date" name="date" required>
+                    </label>
+                </div>
+            </div>
+            <label for="message">
+                <img src="assets/iconsBook/ic--outline-message.svg" alt="msg icon" class="textarea-icon">
+                <textarea id="message" name="message" required placeholder="YOUR MESSAGE..."></textarea>
+            </label>
+            <button type="button" onclick="sendToWhatsApp()">Send via WhatsApp</button>
+        </form>
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bookPage.js"></script>
+</body>
+</html>
