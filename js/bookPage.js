@@ -14,9 +14,13 @@ document.addEventListener("DOMContentLoaded", function() {
         var date = document.getElementById('date').value;
         var message = document.getElementById('message').value;
 
+        // Mengisi pesan WhatsApp dengan informasi dari form
         var whatsappMessage = `Nama: ${name}\nEmail: ${email}\nTelepon: ${phone}\nTanggal: ${date}\nPesan: ${message}`;
-        var whatsappURL = `https://api.whatsapp.com/send?phone=6289694034653&text=${encodeURIComponent(whatsappMessage)}`;
 
+        // URL WhatsApp dengan nomor tujuan dan pesan yang diencode
+        var whatsappURL = `https://wa.me/6289694034653?text=${encodeURIComponent(whatsappMessage)}`;
+
+        // Buka pesan WhatsApp dalam tab atau jendela baru
         window.open(whatsappURL, '_blank');
     }
 
@@ -27,18 +31,21 @@ document.addEventListener("DOMContentLoaded", function() {
         var emailValue = emailInput.value.trim();
         var phonePattern = /^[0-9+]*$/;
 
+        // Validasi bahwa minimal salah satu dari nomor telepon atau email diisi
         if (phoneValue === '' && emailValue === '') {
-            alert("Please fill in either Phone Number or Email Address.");
+            alert("Harap isi salah satu dari Nomor Telepon atau Alamat Email.");
             return false;
         }
 
+        // Validasi nomor telepon
         if (phoneValue !== '' && !phonePattern.test(phoneValue)) {
-            alert("Please enter a valid phone number (only numbers and '+').");
+            alert("Harap masukkan nomor telepon yang valid (hanya angka dan '+').");
             return false;
         }
 
+        // Jika nomor telepon diisi, tidak perlu email dan sebaliknya
         if (phoneValue !== '' && emailValue !== '') {
-            alert("Please fill in only one field: either Phone Number or Email Address.");
+            alert("Harap isi hanya satu dari Nomor Telepon atau Alamat Email.");
             return false;
         }
 
@@ -52,3 +59,4 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
