@@ -4,8 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aneka Jus Seroja</title>
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html"><img src="assets/logo-ajs.svg" alt="logo"></a> 
+            <a href="index.html" class="title">ANEKA JUS SEROJA</a>
+        </div>
+  
+        <ul class="side-bar">
+            <li onclick=hideSidebar()> <img src="assets/close.svg" alt="close"></li>
+            <li><a href="menu.html">Home</a></li>
+  
+            <li class="dropdown"><a href="#" class="dropbtn">Our Menu <img src="assets/dropdown.svg" alt=""></a>
+                <ul class="dropdown-content">
+                    <li><a href="menuPage.html">Resto Menu</a></li> 
+                    <li><a href="menu.html#catering">Catering</a></li>
+                    <li><a href="menu.html#frozen-food">Frozen Food</a></li>
+                    <li><a href="menu.html#pudding">Pudding</a></li>
+                </ul>
+            </li>
+  
+            <li><a href="#">Order</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+  
+        <ul class="nav-bar">
+            <li class="hideOnMobile"><a href="menu.html">Home</a></li>
+  
+            <li class="dropdown hideOnMobile"><a href="#">Our Menu <img src="assets/dropdown-dark.svg" alt=""></a>
+                <ul class="dropdown-content">
+                    <li class="hideOnMobile"><a href="menuPage.html">Resto Menu</a></li>
+                    <li class="hideOnMobile"><a href="menu.html#catering">Catering</a></li>
+                    <li class="hideOnMobile"><a href="menu.html#frozen-food">Frozen Food</a></li>
+                    <li class="hideOnMobile"><a href="menu.html#pudding">Pudding</a></li>
+                </ul>
+            </li>
+  
+            <li class="hideOnMobile"><a href="bookPage.html">Order</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
+            <li onclick=showSidebar() class="menu-bar"> <img src="assets/menu-dark.svg" alt="side"></li>
+        </ul>
+    </div>
+
+    <section class="container">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us today!</p>
+        
+        <div class="contact">
+            <div class="contact-info">
+                <ul>
+                    <li><h4><u>Contact Options</u></h4></li>
+                    <li>Email : <a href="mailto:bryanahuat@gmail.com">bryanahuat@gmail.com</a></li>
+                    <li>Whatsapp : <a href="tel:+62 896 9403 4653">+62 896 9403 4653</a></li>
+                    <li><h4 class="low"><u>Restaurant Open Time</u></h4></li>
+                    <li>Open Daily (Minggu Tutup)</li>
+                    <li>09.00 - 17.00 WIB (16.30 Last Order)</li>
+                    <li><h4 class="low"><u>Social Media</u></h4></li>
+                    <li><a href="https://www.instagram.com/anekajusseroja/" target="_blank" class="social">Aneka Jus Seroja Instagram</a></li>
+                    <li><a href="https://www.facebook.com/anekajusseroja/" target="_blank" class="social">Aneka Jus Seroja Facebook</a></li>
+                </ul>
+            </div>
     
+            <div class="location">
+                <h4><u>Restaurant Maps Location</u></h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.817881250903!2d109.3396047747233!3d-0.02688059997285281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d58500e072b17%3A0xbf44aa3cd6c7dbed!2sAneka%20Jus%20Seroja!5e0!3m2!1sid!2sid!4v1720626785335!5m2!1sid!2sid" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <address>Alamat : Jalan Teuku Cik Ditiro No. 15</address>
+                <button class="btn-map"><a href="https://maps.app.goo.gl/LVDmhv4pQuK1DiqD8" target="_blank">Open Google Maps</a></button>
+            </div>
+        </div>
+    </section>
+
+    <script src="contact.js"></script>
 </body>
 </html>
