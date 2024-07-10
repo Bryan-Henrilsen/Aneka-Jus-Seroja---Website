@@ -117,13 +117,13 @@ body {
     display: none;
     position: absolute;
     list-style: none;
-    min-width: 160px;
+    min-width: 200px;
     z-index: 1;
 }
 
 .dropdown-content li a {
     color: #FF8F00;
-    padding: 5px 16px;
+    padding: 5px 0;
     text-decoration: none;
     display: block;
 }
