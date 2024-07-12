@@ -58,10 +58,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         // Jika nomor telepon diisi, tidak perlu email dan sebaliknya
-        if (phoneValue !== '' && emailValue !== '') {
-            alert("Harap isi hanya satu dari Nomor Telepon atau Alamat Email.");
-            return false;
-        }
+        // if (phoneValue !== '' && emailValue !== '') {
+        //     alert("Harap isi hanya satu dari Nomor Telepon atau Alamat Email.");
+        //     return false;
+        // }
 
         return true;
     }
