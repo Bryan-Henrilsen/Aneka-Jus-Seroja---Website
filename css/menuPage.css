@@ -279,7 +279,43 @@ body {
     justify-content: space-between;
 }
 
-/* akhir dari menu minuman */
+/* akhir dari menu */
+
+/* awal dari menu mobile */
+.container-mobile {
+    width: 100%;
+    height: auto;
+    padding: 10px 10%;
+    display: none;
+}
+
+.mobile {
+    margin-bottom: 25px;
+}
+
+.mobile-list {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-list li {
+    font-size: 13px;
+    font-family: 'Tienne', serif;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-menu-list-mobile {
+    display: flex;
+    padding: 10px 0;
+    font-family: 'Prata';
+    font-size: 20px;
+    justify-content: left;
+}
+
+
+/* akhir dari menu mobile */
 
 
 /* di bawah ini untuk responsive design */
@@ -301,6 +337,14 @@ body {
 
     .nav-bar li a{
         padding: 0 10px;
+    }
+
+    .container {
+        display: none;
+    }
+
+    .container-mobile {
+        display: block;
     }
 }
 
@@ -330,6 +374,27 @@ body {
 
     .menu-bar {
         display: block;
+    }
+
+    .menu-nav {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        padding: 10px 5%;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .menu-list li {
+        width: 100%;
+        border: solid 1px #000000;
+    }
+
+    .menu-list li a {
+        padding: 10px 0;
     }
 }
 
