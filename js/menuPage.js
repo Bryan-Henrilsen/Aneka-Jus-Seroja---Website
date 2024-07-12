@@ -20,3 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }); 
 });
+
+function scrollToMultipleIds(id1, id2) {
+    document.getElementById(id1).scrollIntoView({behavior: 'smooth'});
+    document.getElementById(id2).scrollIntoView({behavior: 'smooth'});
+}
